@@ -295,11 +295,13 @@ int main(int argc, char **argv)
 		}
 		
 		// Extract the data from In file to program_word
-		ptr = strstr(linebuf, "\r\n");
-		*ptr = '\0';
+		
+		// Removing trailing newline character from fgets() input
+//		ptr = strstr(linebuf, "\r\n");
+//		*ptr = '\0';
+		linebuf[strcspn(linebuf, "\r\n")] = 0;
 
 		//xtoi(linebuf, &program_word[line_count]);
-		
 		program_word[line_count] = xstrtoi(linebuf);
 		
 		//printf("\n%s=>%05X",linebuf,program_word[line_count]);
