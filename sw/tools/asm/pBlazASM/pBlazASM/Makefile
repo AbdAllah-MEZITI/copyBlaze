@@ -13,10 +13,10 @@ DRIVE=/cygdrive/c
 RM = rm
 #MP = "C:/Qt/2010.04/mingw/include"
 #CC = "C:/Qt/2010.04/mingw/bin/gcc"
-#MP = 
-#CC = gcc
-MP = $(DRIVE)/tcc/include
-CC = $(DRIVE)/tcc/tcc.exe
+MP = 
+CC = gcc
+#MP = $(DRIVE)/tcc/include
+#CC = $(DRIVE)/tcc/tcc.exe
 
 
 C_SRCS += \
